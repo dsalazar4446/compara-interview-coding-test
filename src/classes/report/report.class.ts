@@ -10,6 +10,7 @@ export class Report {
         if(this.products.length == 0) {
             throw 'La lista de productos no puede estar vacia'
         }
+        
         const carInsurance = new CarInsurance(this.getProducts());
         
         for (let i = 1; i <= 30; i += 1) {

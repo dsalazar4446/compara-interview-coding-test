@@ -7,7 +7,9 @@
         "build": "rimraf dist && tsc -p tsconfig.build.json",
         "dev": " tsc-watch -p tsconfig.build.json --onSuccess \"node  dist/main.js\"",
         "after-30-days": "node dist/main.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:cov": "jest --coverage"
     },
     "author": "Daniel Salazar",
     "license": "ISC",
